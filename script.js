@@ -63,6 +63,12 @@ document.querySelectorAll("[data-config-link]").forEach(link => {
 
 const classDialog = document.querySelector("#classDialog");
 const classDialogTitle = document.querySelector("#classDialogTitle");
+const classDialogContent = document.querySelector("#classDialogContent");
+
+const classTemplates = {
+  "정규클래스": document.querySelector("#regularClassTemplate"),
+  "원데이클래스": document.querySelector("#oneDayClassTemplate")
+};
 
 function closeClassDialog() {
   if (classDialog.open) classDialog.close();
@@ -70,7 +76,12 @@ function closeClassDialog() {
 
 document.querySelectorAll("[data-open-class]").forEach(button => {
   button.addEventListener("click", () => {
-    classDialogTitle.textContent = button.dataset.openClass;
+    const className = button.dataset.openClass;
+    const template = classTemplates[className];
+    if (!template) return;
+
+    classDialogTitle.textContent = className;
+    classDialogContent.replaceChildren(template.content.cloneNode(true));
     classDialog.showModal();
   });
 });
