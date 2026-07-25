@@ -4,7 +4,7 @@
  */
 const CONFIG = {
   // 전화 연결을 사용하려면 실제 번호로 바꿔 주세요. 예: "01012345678"
-  phone: "",
+  phone: "050714618584",
   kakaoUrl: "https://pf.kakao.com/_AnxoxaG",
   blogUrl: "https://blog.naver.com/hesed_art",
   mapUrl: "https://naver.me/FY3UM7Fq",
