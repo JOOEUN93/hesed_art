@@ -1,16 +1,22 @@
 # Hesed Art Academy 링크형 홈페이지
 
-기존 Linktree 화면의 분위기를 살려 만든 모바일 우선 반응형 정적 홈페이지입니다.
+새 HESED 로고의 크림·딥그린 색상에 맞춰 전체 분위기를 다시 구성한 모바일 우선 반응형 정적 홈페이지입니다.
 
-## 포함 기능
+## 변경된 디자인
 
-- 기존 링크 페이지와 유사한 핑크 배경, 카드형 메뉴, 로고 스타일
-- 사전예약 모달 폼
-- 전화 바로 연결
-- 카카오톡 채널, 네이버 블로그, 오시는 길 연결
-- 모바일 하단 고정 빠른 메뉴
-- 공유 버튼(Web Share API, 미지원 시 주소 복사)
-- Formspree 등 외부 폼 수신 서비스 연동 가능
+- 상단 `.wordmark` 텍스트를 새 로고 이미지로 교체
+- 기존 핑크·레드 색상을 크림·딥그린 계열로 변경
+- 카드 아이콘을 하트형에서 타원형 미니 인장 스타일로 변경
+- 카드, 예약창, 하단 빠른 메뉴의 버튼과 포커스 색상 통일
+- 모바일 화면에서도 로고가 자연스럽게 보이도록 자동 크롭 적용
+
+## 파일 구성
+
+- `index.html`: 기본 홈페이지
+- `style.css`: 전체 디자인
+- `script.js`: 예약, 전화, 공유 기능
+- `assets/hesed-wordmark.webp`: 새 HESED 로고
+- `index-single.html`: 이미지·CSS·JavaScript를 한 파일에 포함한 버전
 
 ## 가장 먼저 수정할 곳
 
@@ -18,16 +24,16 @@
 
 ```js
 const CONFIG = {
-  phone: "050714618584",
-  kakaoUrl: "https://pf.kakao.com/_yqLIn",
+  phone: "050712345678",
+  kakaoUrl: "https://pf.kakao.com/_AnxoxaG",
   blogUrl: "https://blog.naver.com/hesed_art",
   mapUrl: "https://naver.me/FY3UM7Fq",
   formEndpoint: ""
 };
 ```
 
-- `phone`: 하이픈 없이 실제 전화번호 입력
-- `formEndpoint`: Formspree 폼 주소가 있으면 입력. 비워 두면 예약내용을 복사한 뒤 카카오톡으로 이동
+- `phone`: 0507 안심번호를 포함해 하이픈 없이 입력
+- `formEndpoint`: Formspree 폼 주소가 있으면 입력. 비워 두면 예약 내용을 복사한 뒤 카카오톡으로 이동
 
 ## 실행 방법
 
@@ -40,7 +46,3 @@ python -m http.server 8000
 ```
 
 그 후 브라우저에서 `http://localhost:8000`으로 접속합니다.
-
-## 무료 배포
-
-GitHub Pages, Netlify, Cloudflare Pages 중 한 곳에 이 폴더를 업로드하면 됩니다.
