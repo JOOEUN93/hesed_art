@@ -25,7 +25,7 @@
 ```js
 const CONFIG = {
   phone: "050712345678",
-  kakaoUrl: "https://pf.kakao.com/_AnxoxaG",
+  kakaoUrl: "https://pf.kakao.com/_yqLIn",
   blogUrl: "https://blog.naver.com/hesed_art",
   mapUrl: "https://naver.me/FY3UM7Fq",
   formEndpoint: ""
