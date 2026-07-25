@@ -1,26 +1,25 @@
 <!doctype html>
 <html lang="ko">
-<head>
+<head>  
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PW82SQZZMW"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW82SQZZMW"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-PW82SQZZMW');
-</script>
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#fff0c7" />
+  <meta name="theme-color" content="#fce3b7" />
   <meta name="description" content="그림을 그리고 싶은 곳, 헤세드 미술학원" />
   <meta property="og:title" content="헤세드 미술 | Hesed Art Academy" />
-  <meta property="og:description" content="아동·성인 정규 클래스와 원데이 클래스 예약 및 문의" />
-  <meta property="og:image" content="./assets/hesed-wordmark.webp" />
+  <meta property="og:description" content="아동·성인 정규 클래스와 원데이 클래스 문의" />
   <title>헤세드 미술 | Hesed Art Academy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
   <script src="./script.js" defer></script>
 </head>
@@ -28,7 +27,7 @@
   <div class="page-shell">
     <header class="topbar" aria-label="페이지 도구">
       <a class="circle-button brand-mark" href="#top" aria-label="맨 위로 이동">
-        <span aria-hidden="true">✳</span>
+        <span aria-hidden="true">✦</span>
       </a>
       <button class="circle-button" id="shareButton" type="button" aria-label="페이지 공유">
         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -40,75 +39,77 @@
     <main id="top" class="content">
       <section class="hero" aria-labelledby="pageTitle">
         <div class="wordmark">
-          <img src="./assets/hesed-wordmark.webp" alt="HESED Art academy 로고" />
+          <img src="./assets/hesed-wordmark-red-transparent.png" alt="HESED Art academy" />
         </div>
-        <h1 id="pageTitle">헤세드 미술</h1>
-        <p>그림을 그리고 싶은 곳, 헤세드 미술학원</p>
+        <div class="hero-copy">
+          <p class="hero-kicker">Hesed Art Academy</p>
+          <h1 id="pageTitle">헤세드 미술</h1>
+          <p>그림을 그리고 싶은 곳, 헤세드 미술학원</p>
+        </div>
       </section>
 
       <section class="link-list" aria-label="헤세드 미술 바로가기">
         <a class="link-card" href="#about">
-          <span class="heart-logo heart-logo-soft" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
+          <span class="mini-logo" aria-hidden="true">H</span>
+          <span class="link-copy">
+            <strong>Hesed ART 홈페이지</strong>
+            <small>학원 소개와 운영 안내</small>
           </span>
-          <span class="link-label">Hesed ART 홈페이지</span>
-          <span class="more" aria-hidden="true">⋮</span>
+          <span class="more" aria-hidden="true">›</span>
         </a>
 
-        <button class="link-card" type="button" data-open-reservation="상담 및 방문 예약">
-          <span class="heart-logo" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
-          </span>
-          <span class="link-label">Hesed ART 사전예약</span>
-          <span class="more" aria-hidden="true">⋮</span>
-        </button>
-
         <button class="link-card" type="button" id="callCard">
-          <span class="heart-logo" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
+          <span class="mini-logo" aria-hidden="true">☎</span>
+          <span class="link-copy">
+            <strong>전화 상담 연결</strong>
+            <small>수업 및 방문 문의</small>
           </span>
-          <span class="link-label">전화 상담 연결</span>
-          <span class="more" aria-hidden="true">⋮</span>
+          <span class="more" aria-hidden="true">›</span>
         </button>
 
         <a class="link-card external-link" data-config-link="kakaoUrl" href="#">
-          <span class="heart-logo" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
+          <span class="mini-logo" aria-hidden="true">K</span>
+          <span class="link-copy">
+            <strong>Hesed ART 카카오톡 문의</strong>
+            <small>편하게 메시지를 남겨주세요</small>
           </span>
-          <span class="link-label">Hesed ART 카카오톡 문의</span>
-          <span class="more" aria-hidden="true">⋮</span>
+          <span class="more" aria-hidden="true">›</span>
         </a>
 
         <a class="link-card external-link" data-config-link="blogUrl" href="#">
-          <span class="heart-logo" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
+          <span class="mini-logo" aria-hidden="true">B</span>
+          <span class="link-copy">
+            <strong>Hesed ART 블로그</strong>
+            <small>수업 작품과 학원 소식</small>
           </span>
-          <span class="link-label">Hesed ART 블로그</span>
-          <span class="more" aria-hidden="true">⋮</span>
+          <span class="more" aria-hidden="true">›</span>
         </a>
 
-        <button class="link-card" type="button" data-open-reservation="정규 클래스">
-          <span class="heart-logo" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
+        <button class="link-card class-card" type="button" data-open-class="정규클래스" aria-label="정규클래스 안내 열기">
+          <span class="mini-logo" aria-hidden="true">R</span>
+          <span class="link-copy">
+            <strong>정규클래스</strong>
+            <small>수업 가능 시간 확인하기</small>
           </span>
-          <span class="link-label">정규클래스 시간표 (아동/성인)</span>
-          <span class="more" aria-hidden="true">⋮</span>
+          <span class="more" aria-hidden="true">›</span>
         </button>
 
-        <button class="link-card" type="button" data-open-reservation="원데이 클래스">
-          <span class="heart-logo" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
+        <button class="link-card class-card" type="button" data-open-class="원데이클래스" aria-label="원데이클래스 안내 열기">
+          <span class="mini-logo" aria-hidden="true">O</span>
+          <span class="link-copy">
+            <strong>원데이클래스</strong>
+            <small>수업 가능 시간 확인하기</small>
           </span>
-          <span class="link-label">원데이클래스</span>
-          <span class="more" aria-hidden="true">⋮</span>
+          <span class="more" aria-hidden="true">›</span>
         </button>
 
         <a class="link-card external-link" data-config-link="mapUrl" href="#">
-          <span class="heart-logo" aria-hidden="true">
-            <span>Hesed</span><small>Art Academy</small>
+          <span class="mini-logo" aria-hidden="true">P</span>
+          <span class="link-copy">
+            <strong>오시는 길 / 주차 가능</strong>
+            <small>지도에서 위치 확인하기</small>
           </span>
-          <span class="link-label">오시는길 / 주차 가능</span>
-          <span class="more" aria-hidden="true">⋮</span>
+          <span class="more" aria-hidden="true">›</span>
         </a>
       </section>
 
@@ -116,7 +117,7 @@
         <p class="eyebrow">Hesed Art Academy</p>
         <h2>마음을 다하는 미술 공간</h2>
         <p>
-          수채화, 유화, 드로잉과 다양한 조형 활동을 통해 자신만의 아름다운 색을 발견하고
+          수채화, 유화, 드로잉과 다양한 조형 활동을 통해 자신만의 색을 발견하고
           자유롭게 표현하는 시간을 만듭니다.
         </p>
         <div class="info-tags" aria-label="운영 클래스">
@@ -124,9 +125,7 @@
           <span>성인 취미 미술</span>
           <span>원데이 클래스</span>
         </div>
-        <address>
-          서울 성북구 종암로9길 52, 1층
-        </address>
+        <address>서울 성북구 종암로9길 52, 1층</address>
       </section>
 
       <p class="footer-pill">Hesed ART와 함께 그림을 시작해 보세요</p>
@@ -135,10 +134,6 @@
   </div>
 
   <nav class="quick-actions" aria-label="빠른 문의">
-    <button type="button" data-open-reservation="상담 및 방문 예약">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v3M18 3v3M4 9h16M5 5h14v15H5zM8 13h3M13 13h3M8 17h3"/></svg>
-      <span>예약</span>
-    </button>
     <button type="button" id="callQuickButton">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.7 4.8 5.3c-.8.5-.9 1.5-.6 2.4 2 5.9 6.2 10.1 12.1 12.1.9.3 1.9.2 2.4-.6l1.6-2.4-4.4-2.1-1.2 1.7c-2.9-1.3-5.2-3.6-6.5-6.5l1.7-1.2z"/></svg>
       <span>전화</span>
@@ -147,73 +142,27 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4C6.9 4 3 7.2 3 11.1c0 2.5 1.6 4.7 4.1 6l-.8 3 3.5-2.2c.7.2 1.4.3 2.2.3 5.1 0 9-3.2 9-7.1S17.1 4 12 4Z"/></svg>
       <span>카톡</span>
     </a>
+    <a data-config-link="mapUrl" href="#">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.3 6-11a6 6 0 1 0-12 0c0 5.7 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>
+      <span>길찾기</span>
+    </a>
   </nav>
 
-  <dialog id="reservationDialog" class="reservation-dialog">
-    <form id="reservationForm" method="dialog">
-      <div class="dialog-head">
-        <div>
-          <p class="eyebrow">PRE-RESERVATION</p>
-          <h2>헤세드 ART 사전예약</h2>
-        </div>
-        <button class="close-button" type="button" id="closeDialog" aria-label="예약창 닫기">×</button>
+
+  <dialog id="classDialog" class="class-dialog" aria-labelledby="classDialogTitle">
+    <div class="class-dialog-inner">
+      <button class="dialog-close" id="closeClassDialog" type="button" aria-label="안내창 닫기">×</button>
+      <p class="dialog-kicker">Hesed Art Academy</p>
+      <h2 id="classDialogTitle">클래스 안내</h2>
+      <div class="class-time-message">
+        <p>월요일 7~9시<br />화요일 9~10시 가능합니다.</p>
+        <strong>정확한 내용은 상담 부탁드립니다.</strong>
       </div>
-
-      <p class="form-guide">내용을 작성하면 예약 문의 문구가 자동으로 만들어집니다.</p>
-
-      <label>
-        <span>신청자명 <b>*</b></span>
-        <input type="text" name="name" autocomplete="name" required placeholder="이름을 입력해 주세요" />
-      </label>
-
-      <label>
-        <span>연락처 <b>*</b></span>
-        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required placeholder="010-0000-0000" />
-      </label>
-
-      <label>
-        <span>신청 클래스 <b>*</b></span>
-        <select name="classType" required>
-          <option value="">선택해 주세요</option>
-          <option>아동 정규 클래스</option>
-          <option>중등 클래스</option>
-          <option>성인 정규 클래스</option>
-          <option>원데이 클래스</option>
-          <option>상담 및 방문 예약</option>
-        </select>
-      </label>
-
-      <div class="field-row">
-        <label>
-          <span>희망일</span>
-          <input type="date" name="preferredDate" />
-        </label>
-        <label>
-          <span>희망 시간</span>
-          <select name="preferredTime">
-            <option value="">선택</option>
-            <option>오전</option>
-            <option>오후</option>
-            <option>저녁</option>
-          </select>
-        </label>
-      </div>
-
-      <label>
-        <span>문의 내용</span>
-        <textarea name="memo" rows="4" placeholder="연령, 미술 경험, 궁금한 점 등을 적어 주세요"></textarea>
-      </label>
-
-      <label class="privacy-check">
-        <input type="checkbox" required />
-        <span>예약 상담을 위한 개인정보 수집 및 이용에 동의합니다. <b>*</b></span>
-      </label>
-
-      <button class="primary-button" type="submit">예약 문의 보내기</button>
-      <p class="form-note">별도 서버 연결 전에는 작성 내용이 복사된 뒤 카카오톡 상담창으로 이동합니다.</p>
-    </form>
+      <button class="dialog-confirm" id="confirmClassDialog" type="button">확인</button>
+    </div>
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
+
