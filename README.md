@@ -18,7 +18,7 @@
 
 ```js
 const CONFIG = {
-  phone: "01012345678",
+  phone: "050714618584",
   kakaoUrl: "https://pf.kakao.com/_yqLIn",
   blogUrl: "https://blog.naver.com/hesed_art",
   mapUrl: "https://naver.me/FY3UM7Fq",
