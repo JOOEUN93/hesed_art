@@ -10,20 +10,6 @@
 - 전체 색상을 크림 배경과 딥레드 포인트로 변경
 - 하단 빠른 메뉴를 전화 / 카톡 / 길찾기로 구성
 
-## 전화번호 입력
-
-`script.js` 상단의 `phone`에 0507 안심번호를 하이픈 없이 입력하세요.
-
-```js
-const CONFIG = {
-  phone: "050712345678",
-  kakaoUrl: "https://pf.kakao.com/_yqLIn",
-  blogUrl: "https://blog.naver.com/hesed_art",
-  mapUrl: "https://naver.me/FY3UM7Fq",
-  formEndpoint: ""
-};
-```
-
 ## 실행
 
 `index.html`을 더블클릭하거나 아래 명령으로 로컬 서버를 실행합니다.
